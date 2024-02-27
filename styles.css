@@ -1,0 +1,218 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        text-decoration: none;
+    }
+    #navbar-pinterest{
+        justify-content: space-between;
+    }
+
+    #navbar-pinterest .logo{
+        cursor: pointer;
+        margin-right: auto;
+        width: 50px;
+
+    }
+
+
+    #navbar-pinterest .logo img{
+        justify-content: flex-start;
+        height: 50px;
+        width: 50px;
+        transition: all 0.3s;
+
+    }
+    
+    #navbar-pinterest .logo img:hover{
+        transform: scale(1.2);
+    }
+
+    #navbar-pinterest .pinterest-icon{
+            width: 50px;
+            border: solid;
+            background-color: #00e6b4;
+    
+        }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav {
+            background-color: white;
+            /*color: #fff;*/
+            padding: 10px;
+            display: flex;
+            align-items: center; 
+            justify-content: right;
+            /*position: fixed; */
+            top: 0;
+            width: 100%;
+            min-width: auto;
+            z-index: 1000;  
+        }  
+
+    nav input.finder {
+        padding: 15px;
+        border-radius: 50px;
+        border: none;
+        text-align: left;
+        align-items: center;
+        /*margin-left: 10px;*/
+        justify-content: left;
+        width: 3000px;
+
+    }
+    
+    nav div {
+        display: flex;
+        align-items: center;
+        margin: 5px 5px;
+        padding: 10px; 
+    }
+    
+
+    #navbar-pinterest img {
+       /* height: 20px;*/
+        width: 40px;
+    }
+
+   /*A probar grid*/
+   .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: white;
+    padding: 20px;
+
+  }
+  .card-image {
+    background-color: rgba(255, 255, 255, 2);
+    border: 1px solid white(0, 0, 0, 0);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: black;
+  }
+  /* fin grid*/
+   
+    main {
+        padding-top: 60px; /* Para dejar espacio para la barra de navegación */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .card-image {
+        margin-bottom: 20px;
+        position: relative;
+    }
+    /**/
+    .card-image img {
+        height: 300px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 5px 8px 12px black;
+    }
+    
+    .card-image div{
+        height: 10px;
+        padding: auto;
+    }
+
+    .image-buttons {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        display: none;
+    }
+    
+    .card-image:hover .image-buttons {
+        display: block;
+    }
+    
+    .image-buttons button {
+        background-color: #e60023;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+    
+    @media   (min-width: 600px) {
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+           /* background-color: lightblue;*/
+            padding: 5px;
+          }
+
+        .card-image img{
+            height: 200px;
+            width: 150px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 5px 8px 12px black;
+            background-color: lightsalmon;
+        }
+        nav input.finder {
+            padding: 6;
+            justify-content: left;
+            width: 500px;
+        }
+    }
+
+    @media   (min-width: 768px) {
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+           /* background-color: lightblue;*/
+            padding: 5px;
+          }
+
+        .card-image img{
+            height: 200px;
+            width: 150px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 5px 8px 12px black;
+            background-color: lightgoldenrodyellow;
+        }
+        nav input.finder {
+            padding: 6;
+            justify-content: left;
+            width: 500px;
+        }
+    }
+
+    @media   (min-width: 1200px) {
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+          /*  background-color: rgb(135, 250, 169);  */
+            padding: 5px;
+            height: 10px;
+            box-shadow: black;
+          }
+
+        .card-image img{
+            height: 250px;
+            width: 175px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 5px 8px 12px black;
+            background-color: lightseagreen;
+        }
+        }
+        nav input.finder {
+            padding: 10;
+            justify-content: left;
+            width: 700px;
+        }
